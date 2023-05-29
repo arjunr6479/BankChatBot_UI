@@ -1,0 +1,197 @@
+{
+
+  "Hi":
+
+  {"reply":"Hi! How can I help you with",
+
+  "url":""},
+
+  "Register a complaint":
+
+  {"reply":"For complaints, reach us on 1800-414-00005 and a Customer Care Professional will assist you or",
+
+  "url":"Register"},
+
+  "Hello":
+
+  {"reply":"Hello! How can I help you with",
+
+  "url":""},
+
+ 
+
+  "Who are you?":
+
+  {"reply":"I am Nia. I am your personal assistant on ZF Bank's website to help you with your questions",
+
+  "url":""},
+
+  "What is your name?":
+
+  {"reply":"People call me Nia. How can I help you today?",
+
+  "url":""},
+
+  "How to login to my account?":
+
+  {"reply":"Simply type 'Login' on ZFB's Nia and log in to your Savings Account using Customer ID and Password or mPIN.",
+
+  "url":""},
+
+  "Login":
+
+  {"reply":"Please click on the below link to login-",
+
+  "url":"Login"},
+
+  "Report Fraud":
+  
+  {"reply":"Please login to report any fraud",
+
+  "url":"Login"
+  
+  },
+
+  "How do I reset my login password?":
+
+  {"reply":"To reset the login password\nClick on the Forgot Password option\nSystem will redirect you to the next page where you have to enter Domain ID, User ID and Registered Email Id\n On clicking on \"Password Reset\", system triggers an email with auto generated password on your registered email ID.",
+
+  "url":""},
+
+  "How to open savings account?":
+
+  {"reply":"Please download the ZF Bank MobileBanking App .Then, Click on \"Open Account\" at the bottom and follow the simple steps from the comfort of your house.\nAlternatively, please click on below link to apply for a Savings Account.",
+
+  "url":"Apply"},
+
+  "How do I close my Savings Account?":
+
+  {"reply":" We request you to reconsider your decision to close the account. In case you still wish to close your account here is the process:\nGet an account closure form from any of our branches or download it from the link below.\nKindly submit the filled account closure form at your nearest ZF Bank branch duly signed by all Joint Holders in the same order of names as appearing on the account to be closed.",
+
+  "url":"Account Closure Form"},
+
+  "How long will it take to open an account?":
+
+  {"reply":"Generally, an account will be activated within 3 working days.",
+
+  "url":""},
+
+ 
+
+  "How to open current account?":
+
+  {"reply":"Current Accounts can be opened for Individual, Hindu Undivided Family (HUF), Sole Proprietorship, Company, Partnership firms, Trust, Government bodies etc.ZF Bank offers diversified range of Current Accounts made to cater different segment and balance requirements.\nYou can opt various ways to open a Current Account with ZF Bank:\na. Digitally Video KYC enabled Current Account for Business Individuals\nb. Smart tablet based account opening for Individual, Sole Proprietorship, Company and Partnership Accounts\nc. Account opening via physical form filling process\nYou could click on apply button to apply for a Digital Current Account, alternatively you could visit your nearest ZF Bank branch to get an instant Current Account Number.",
+
+  "url":"Click here"},
+
+  "Who can open Current Account?":
+
+  {"reply":"Current Accounts can be opened by Individuals, Hindu Undivided Families (HUF), Sole Proprietorships, Company, Partnership firms, Trust Government bodies etc.\nWith ZF Bank, you can choose Current Account basis your type of business, Annual Turnover, Average monthly balance maintenance, No. of transactions required etc.",
+
+  "url":""},
+
+  "What is a current account?":
+
+  {"reply":"A Current Account is a type of deposit account offering a significantly higher number transactions (In terms of cheque issuance, deposits, withdrawals, and D.D. issuance etc.) and services designed for businesses. Such as Overdraft,\ni.e. the ability to avail of more funds than the balance maintained with bank which can be repaid at a later date. At ZF Bank, we offer different types of Current Accounts with customized features to meet your specific business requirements.\nTo know more about the account opening documentation/further process you could click on the link below or visit your nearest ZF Bank branch to get an instant Current Account Number.",
+
+  "url":"Click here"},
+
+ 
+
+ 
+
+  "How to apply for home loan?":
+
+  {"reply":"ZF Bank offers affordable and flexible housing loans that can turn your dream of owning a home into reality.To apply for a home loan-",
+
+  "url":"Click here"},
+
+  "How to apply for car loan?":
+
+  {"reply":"I can help you with that.To check your car loan eligibility-",
+
+  "url":"Click here"},
+
+  "How to change home branch ?":
+
+  {"reply":"Login to Internet Banking, click on Services - Insta Services - Accounts - Click on Transfer Account and proceed. Alternatively, in ZF Mobile, go to Services & Support - Services - Accounts - Transfer Account. Click on the below link to login.",
+
+  "url":"Login"},
+
+  "What are the requirements for an education loan?":
+
+  {"reply":"If you are pursuing higher education in India or abroad, ZF Bank offers education loans for both graduate and post-graduate admissions. Please click on link below to know more.",
+
+  "url":"Click here"},
+  "How to pay the credit card bill through internet banking ?":
+  {
+    "reply":"You can make a bill payment for your card through Internet Banking or ZF Bank Mobile by adding a biller through Bill Pay and then make a payment once the biller reflects in the list of billers.",
+    "url":""
+  },
+  "When will my cheque be cleared ?":
+  {
+    "reply":"Please you can call us on our Phone Banking numbers (1860-419-5555 or 1860-500-5555 or 1800-103-5577 (toll free)) to know the status of your request.",
+    "url":""
+  },
+  "How to stop a cheque ?":
+  {
+    "reply":"Cheque can be stopped by clicking on the stop cheque facility and by entering the date or directly the cheque number.",
+    "url":""
+  },
+  "I have not received the welcome kit for my savings account what do i do ?":
+  {
+    "reply":"Oh no, that is unexpected. :O Ideally you should receive your Savings Account Welcome Kit at your communication address within 7-10 working days from account opening. If you haven't received it, please you can call us on our Phone Banking numbers (1860-419-5555 or 1860-500-5555 or 1800-103-5577 (toll free)) to check this. for resolution.",
+    "url":""
+  },
+  "I have not received my cheque book what do i do ?":
+  {
+    "reply":"You need to complete your KYC & Signature update in your account to be eligible for a cheque book. You can visit your ZF Bank",
+    "url":""
+  },
+  "How to apply for credit card?":
+  {
+    "reply":"Sure, I can help you with that. You can choose from a wide range of Credit Cards according to your requirements.  Please click on below link to apply for a new card",
+    "url":"Click here"
+  },
+  "How to apply for debit card?":
+  {
+    "reply":"Thanks for your interest in Axis Bank. To apply for a Debit Card, you would need to visit your nearest branch",
+    "url":""
+  },
+
+ 
+  "Credit Card related issues":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Manage Credit Card",
+    "url1":"Block Credit Card",
+    "url2":"Bill Payment"
+  },
+  "Debit Card related issues":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Manage Debit Card",
+    "url1":"Block Debit Card",
+    "url2":"Update Debit Card"
+  },
+  "Loan":
+  {
+    "reply":"Please select any of the options below"
+    
+  },
+  "Cheque Services":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Order Cheque Book",
+    "url1":"Know cheque status",
+    "url2":"Stop Cheque"
+  },
+
+  "Locate nearest ATM/Branch":
+  {
+    "reply":"Please share your location to find our ATM/Bank near to you.",
+    "url":"Send location"
+  }
+ 
+
+  }

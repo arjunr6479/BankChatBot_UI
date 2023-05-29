@@ -1,0 +1,218 @@
+<!-- <div class="tm-top-bar-bg"></div>
+    <div class="tm-top-bar" id="tm-top-bar">
+      Top Navbar
+      <div class="container">
+        <div class="row">
+
+          <nav class="navbar navbar-expand-lg narbar-light">
+            <a class="navbar-brand mr-auto" href="#">
+              <img width= 85 src="../../assets/img/logo.png">
+              ZF BANK
+            </a>
+            <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+              data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#top">Home 
+                    <span class="sr-only">(current)</span>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tm-section-4">Loans</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tm-section-5">Save</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#tm-section-6">Contact Us</a>
+                </li>
+                <div >
+                <li class="nav-item" *ngIf="loginlogout">
+                  <a class="nav-link" routerLink="login" >Login</a>
+                </li>
+                <li class="nav-item" *ngIf="!loginlogout">
+                  <a class="nav-link" (click)="logout()">Logout</a>
+                </li>
+                </div>
+                
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div> -->
+
+
+    <!-- <!DOCTYPE html> -->
+<!-- Created By CodingNepal - www.codingnepalweb.com -->
+<!-- <html lang="en"> -->
+<!-- <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Mega Menu | CodingNepal</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+</head> -->
+<body>
+  <nav>
+    <div class="wrapper">
+      <div class="logo">
+        <img width= 35 src="../../assets/img/logo.png">
+        <a href="#">ZF </a><a href="#" style="color:#ffc107;">BANK</a></div>
+      <input type="radio" name="slider" id="menu-btn">
+      <input type="radio" name="slider" id="close-btn">
+      <ul class="nav-links">
+        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
+        <!-- <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li>
+          <a href="#" class="desktop-item">CONTACT</a>
+          <input type="checkbox" id="showDrop">
+          <label for="showDrop" class="mobile-item">Dropdown Menu</label>
+          <ul class="drop-menu">
+            <li><a href="#">Drop menu 1</a></li>
+            <li><a href="#">Drop menu 2</a></li>
+            <li><a href="#">Drop menu 3</a></li>
+            <li><a href="#">Drop menu 4</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="#" class="desktop-item">FEATURES</a>
+          <input type="checkbox" id="showMega">
+          <label for="showMega" class="mobile-item">Mega Menu</label>
+          <div class="mega-box">
+            <div class="content">
+              <div class="row">
+                <img src="img.jpg" alt="">
+              </div>
+              <div class="row">
+                <header>Design Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Graphics</a></li>
+                  <li><a href="#">Vectors</a></li>
+                  <li><a href="#">Business cards</a></li>
+                  <li><a href="#">Custom logo</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Email Services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Personal Email</a></li>
+                  <li><a href="#">Business Email</a></li>
+                  <li><a href="#">Mobile Email</a></li>
+                  <li><a href="#">Web Marketing</a></li>
+                </ul>
+              </div>
+              <div class="row">
+                <header>Security services</header>
+                <ul class="mega-links">
+                  <li><a href="#">Site Seal</a></li>
+                  <li><a href="#">VPS Hosting</a></li>
+                  <li><a href="#">Privacy Seal</a></li>
+                  <li><a href="#">Website design</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="#">Feedback</a></li> -->
+        <div class="links">
+          <li><a >Home</a></li>
+          <!-- <li><a >About</a></li> -->
+          <li><a >Contact</a></li>
+          <li><a >Feedback</a></li>
+          <li><a *ngIf="loginlogout" routerLink="login">Login</a></li>
+          <li>
+              <input type="checkbox" id="showDrop"  *ngIf="!loginlogout" class="desktop-item" (click)="toggleMenu()">
+              <label for="showDrop" class="mobile-item">Details</label>
+              <ul class="drop-menu">
+                <h2>Hi {{user.name}}</h2>
+                <li><a><i  class="fa fa-sign-out fa-xl"></i>Logout</a></li>
+              </ul>
+          </li>
+        </div>
+        <div class="iconwrapper">
+          <div  [routerLink]='[""]' [queryParams]="{section:'home'}" class="button">
+             <div class="icon">
+              <!-- <fa-icon icon="facebook-f" class="fab"></fa-icon> -->
+                <i class="fas fa-home"></i>
+             </div>
+             <span>Home</span>
+          </div>
+          <!-- <div class="button">
+             <div class="icon">
+                <i class="fas fa-info-circle"></i>
+             </div>
+             <span>About</span>
+          </div> -->
+          <div class="button"  [routerLink]='[""]' [queryParams]="{section:'contact'}">
+             <div class="icon">
+                <i class="fas fa-phone fa-s"></i>
+             </div>
+             
+             <span>Contact</span>
+          </div>
+          <!-- <div class="button">
+             <div class="icon">
+                <i class="fas fa-comment-alt"></i>
+             </div>
+             <span>Feedback</span>
+          </div> -->
+          <div  [routerLink]='[""]' [queryParams]="{section:'features'}" class="button">
+            
+             <div class="icon">
+                <i class="fas fa-star"></i>
+             </div>
+             <span>Features</span>
+          </div>
+          <div *ngIf="loginlogout" routerLink="login" class="button">
+            <div class="icon">
+               <i class="fa fa-sign-in fa-xl"></i>
+            </div>
+            <span>Login</span>
+         </div>
+         <div *ngIf="!loginlogout" (click)="toggleMenu()" class="button">
+          <div class="icon">
+             <i class="fa fa-user"></i>
+          </div>
+          <span>Profile</span>
+          <div>
+            <div class="sub-menu-wrap" id="subMenu">
+              <div class="sub-menu">
+                <div class="user-info">
+                  <i class="fa fa-user"></i>
+                  <h2>{{user.name}}</h2>
+                  
+                </div>
+                <hr>
+                <!-- <a class="sub-menu-links">
+                  <i></i>
+                  <p>Settings</p>
+                  <span>></span>
+                </a> -->
+                <a class="sub-menu-links">
+                  <i  class="fa fa-sign-out fa-xl"></i>
+                  <p (click)="logout()">Logout</p>
+                  <span>></span>
+                </a>
+        
+              </div>
+            </div>
+          </div>
+       </div>
+       </div>
+      </ul>
+      <label style="color:rgb(78,78,78)" for="menu-btn" class="btn menu-btn"><i class="fas fa-bars"></i></label>
+    </div>
+  </nav> 
+</body>
+<router-outlet></router-outlet>
+<app-chat></app-chat>
+<!-- </html> -->
+
+
+
+

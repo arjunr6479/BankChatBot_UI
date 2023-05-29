@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Log In / Sign Up | UsmanLiaqat</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v2.1.9/css/unicons.css"
+    />
+    <link rel="stylesheet" href="./login-page.component.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   
+  </head>
+
+  
+  <body>
+    <div class="tm-main-content" id="top">
+      <!-- <div class="tm-top-bar-bg"></div>
+      <div class="tm-top-bar" id="tm-top-bar">
+        Top Navbar
+        <div class="container">
+          <div class="row">
+  
+            <nav class="navbar navbar-expand-lg narbar-light">
+              <a class="navbar-brand mr-auto" href="#">
+                <img width= 85 src="../../assets/img/logo.png">
+                ZF BANK
+              </a>
+              <button type="button" id="nav-toggle" class="navbar-toggler collapsed" data-toggle="collapse"
+                data-target="#mainNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div id="mainNav" class="collapse navbar-collapse tm-bg-white">
+                <ul class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link active" routerLink="">Home 
+                      <span class="sr-only">(current)</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tm-section-4">Loans</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tm-section-5">Save</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tm-section-6">Contact Us</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#tm-section-6">Login</a>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div> -->
+    <!-- partial:index.partial.html -->
+    <form [formGroup]=" loginForm" (ngSubmit)="authenticate()">
+    <div class="section">
+      <div class="container">
+        <div class="row full-height justify-content-center">
+          <div class="col-12 text-center align-self-center py-5">
+            <div class="section pb-5 pt-5 pt-sm-2 text-center">
+              <!-- <h6 class="mb-0 pb-3">
+                <span>Log In </span><span>Sign Up</span>
+              </h6>        
+              <input
+                class="checkbox"
+                type="checkbox"
+                id="reg-log"
+                name="reg-log"
+              /> -->
+              <!-- <label for="reg-log"></label> -->
+              <div class="card-3d-wrap mx-auto">
+                <div class="card-3d-wrapper">
+                  <div class="card-front">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Sign In</h4>
+                        <div class="form-group">
+                          <input
+                           formControlName="username"
+                            type="text"
+                            name="username"
+                            class="form-style"
+                            placeholder="username"
+                            id="logemail"
+                            autocomplete="off"
+                            [ngClass]="{'is-invalid':f['username'].touched&&f['username'].errors}">
+                            <div *ngIf="f['username'].errors" class="invalid-feedback">
+                              <div *ngIf="f['username'].touched&&f['username'].errors?.['required']"   >Username is required</div>
+                             
+
+                            </div>
+                         
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                            <div style="position:relative ;">
+                              <input
+                              formControlName="password"
+                                [type]="password"
+                                name="logpass"
+                                class="form-style"
+                                placeholder="Your Password"
+                                id="logpass"
+                                autocomplete="off"
+                                [ngClass]="{'is-invalid':f['password'].touched&&f['password'].errors}"
+                                required
+                              />
+                              
+                              <!-- <button  style="position:absolute;border-radius:15px ;top: 13px;z-index: 2;transform: translateX(-35px);" (click)="onClickEye()">
+                                <i class="fa fa-eye" aria-hidden="true" *ngIf="!show"></i>
+                                <i class="fa fa-eye-slash" aria-hidden="true" *ngIf="show"></i>
+                              </button> -->
+                            
+                            </div>
+
+                          <div *ngIf="f['password'].errors" class="invalid-feedback">
+                            <div *ngIf="f['password'].touched&&f['password'].errors?.['required']">Password is required</div>
+
+                          </div>
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <a type="submit" class="btn mt-4" (click)="authenticate()"  style=" color: rgb(78,78,78)">submit</a>
+                        <!-- <p class="mb-0 mt-4 text-center">
+                          <a href="#0" class="link">Forgot your password?</a>
+                        </p> -->
+                        <p class="mb-0 mt-4 text-center" style=" color: red">{{errorMessage}}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- <div class="card-back">
+                    <div class="center-wrap">
+                      <div class="section text-center">
+                        <h4 class="mb-4 pb-3">Sign Up</h4>
+                        <div class="form-group">
+                          <input
+                            type="text"
+                            name="logname"
+                            class="form-style"
+                            placeholder="Your Full Name"
+                            id="logname"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-user"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input
+                            type="email"
+                            name="logemail"
+                            class="form-style"
+                            placeholder="Your Email"
+                            id="logemail"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-at"></i>
+                        </div>
+                        <div class="form-group mt-2">
+                          <input
+                            type="password"
+                            name="logpass"
+                            class="form-style"
+                            placeholder="Your Password"
+                            id="logpass"
+                            autocomplete="off"
+                          />
+                          <i class="input-icon uil uil-lock-alt"></i>
+                        </div>
+                        <button type="submit" class="btn btn-success">submit</button>
+                      </div>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </form>
+
+    
+ 
+    <footer class="tm-bg-dark-blue">
+      <div class="container">
+        <div class="row">
+          <!-- <div class="column">
+            <p lass="col-sm-12 tm-font-light tm-color-white p-4 tm-margin-b-0">
+              About Us <span class="tm-current-year">Overview </span></p>
+              <p lass="col-sm-12 tm-font-light tm-color-white p-4 tm-margin-b-0">
+                Useful Links <span class="tm-current-year">Privacy </span></p>
+                <p lass="col-sm-12 tm-font-light tm-color-white p-4 tm-margin-b-0">
+                  Resources <span class="tm-current-year">Ways to Bank </span></p>
+          </div> -->
+          <p class="col-sm-12 text-center tm-font-light tm-color-white p-4 tm-margin-b-0">
+            Copyright © <span class="tm-current-year">2023</span> ZF Bank
+
+            <!-- - Design:  -->
+            <!-- <a rel="nofollow" href="https://www.tooplate.com" class="tm-color-primary tm-font-normal"
+              target="_parent">Tooplate</a> -->
+            </p>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <!-- load JS files -->
+  <script src="js/jquery-1.11.3.min.js"></script> <!-- jQuery (https://jquery.com/download/) -->
+  <script src="js/popper.min.js"></script> <!-- https://popper.js.org/ -->
+  <script src="js/bootstrap.min.js"></script> <!-- https://getbootstrap.com/ -->
+  <script src="js/datepicker.min.js"></script> <!-- https://github.com/qodesmith/datepicker -->
+  <script src="js/jquery.singlePageNav.min.js"></script>
+  <!-- Single Page Nav (https://github.com/ChrisWojcik/single-page-nav) -->
+  <script src="slick/slick.min.js"></script> <!-- http://kenwheeler.github.io/slick/ -->
+  
+  <script type="text/javascript"
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDVWt4rJfibfsEDvcuaChUaZRS5NXey1Cs&amp;v=3.exp&amp;sensor=false&amp;callback=initialize"></script>
+    <!-- partial -->
+  </body>
+  <router-outlet></router-outlet>
+  </html>

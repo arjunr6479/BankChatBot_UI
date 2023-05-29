@@ -1,0 +1,30 @@
+{
+    "Credit Card":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Manage Credit Card",
+    "url1":"Block Credit Card",
+    "url2":"Bill Payment"
+  },
+  "Debit Card":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Manage Debit Card",
+    "url1":"Block Debit Card",
+    "url2":"Update Debit Card"
+  },
+  "Loan":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Manage Debit Card",
+    "url1":"Block Debit Card",
+    "url2":"Update Debit Card"
+  },
+  "Cheque Services":
+  {
+    "reply":"Please select any of the options below",
+    "url":"Order Cheque Book",
+    "url1":"Know cheque status",
+    "url2":"Stop Cheque"
+  }
+}
